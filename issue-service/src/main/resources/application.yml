@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: issue-service
+  datasource:
+    url: jdbc:h2:mem:test
+    username: mm
+    password:
+    driver-class-name: org.h2.Driver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: create-drop
+server:
+  port: 8380
+  error:
+    include-message: ALWAYS
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
