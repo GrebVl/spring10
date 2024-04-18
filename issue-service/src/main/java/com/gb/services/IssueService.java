@@ -1,15 +1,15 @@
-package com.gb.services;
+package ru.gb.services;
 
-import com.gb.providers.BookProvider;
-import com.gb.providers.ReaderProvider;
+import ru.gb.providers.BookProvider;
+import ru.gb.providers.ReaderProvider;
+import ru.gb.model.Issue;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.gb.model.*;
-import com.gb.repository.*;
+import ru.gb.repository.IssueRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;

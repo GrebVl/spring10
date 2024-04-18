@@ -1,16 +1,12 @@
 package com.gb.services;
 
+import com.gb.model.Reader;
 import com.gb.repository.ReaderRepository;
 import lombok.RequiredArgsConstructor;
 
-import org.hibernate.event.spi.RefreshEvent;
-import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.context.event.EventListener;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
-import com.gb.model.*;
 
 
 import java.util.List;

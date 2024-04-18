@@ -1,4 +1,4 @@
-package com.gb;
+package ru.gb;
 
 
 import org.springframework.boot.SpringApplication;

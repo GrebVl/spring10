@@ -1,23 +1,21 @@
 package com.gb.controllers;
 
+import com.gb.services.ReaderService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.gb.model.*;
-import com.gb.services.ReaderService;
+import com.gb.model.Reader;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
 import org.springframework.web.bind.annotation.GetMapping;
-
+import ru.gb.LogExecutionTime;
 
 
 @RestController
@@ -65,6 +63,7 @@ public class ReaderController {
     }
 
     @GetMapping
+    @LogExecutionTime
     public ResponseEntity<List<Reader>> findAll(){
         return ResponseEntity.status(HttpStatus.OK).body(service.getReaders());
     }

@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "http.logging",
+      "type": "ru.gb.LoggingProperties",
+      "sourceType": "ru.gb.LoggingProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "http.logging.log-level",
+      "type": "org.slf4j.event.Level",
+      "sourceType": "ru.gb.LoggingProperties"
+    }
+  ],
+  "hints": []
+}

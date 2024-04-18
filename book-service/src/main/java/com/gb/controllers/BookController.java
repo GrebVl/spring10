@@ -1,9 +1,10 @@
 package com.gb.controllers;
 
+import com.gb.model.Book;
+import com.gb.services.BookService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
@@ -11,12 +12,9 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.gb.model.Book;
-import com.gb.services.BookService;
 import org.springframework.ui.Model;
-
+import ru.gb.LogExecutionTime;
 
 
 @RestController
@@ -28,7 +26,7 @@ public class BookController {
     private final BookService service;
 
     @PostConstruct
-    public void generateReaders() {
+    public void generateBooks() {
         for (int i = 0; i < 15; i++) {
             Book book = new Book();
             book.setName("Book: " + i);
@@ -52,6 +50,7 @@ public class BookController {
 
 
     @GetMapping()
+    @LogExecutionTime
     public ResponseEntity<List<Book>> getAllBook(Model model){
         return ResponseEntity.ok().body(service.getBooks());
     }

@@ -1,4 +1,4 @@
-package com.gb.model;
+package ru.gb.model;
 
 import lombok.Data;
 

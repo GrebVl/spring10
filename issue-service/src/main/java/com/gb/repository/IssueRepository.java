@@ -1,9 +1,9 @@
-package com.gb.repository;
+package ru.gb.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.gb.model.Issue;
+import ru.gb.model.Issue;
 
 import java.util.UUID;
 

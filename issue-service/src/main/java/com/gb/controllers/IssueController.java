@@ -1,9 +1,9 @@
-package com.gb.controllers;
+package ru.gb.controllers;
 
+import ru.gb.services.IssueService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 
-import java.net.URI;
 import java.util.List;
 import java.util.UUID;
 
@@ -11,11 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.gb.model.Issue;
-import com.gb.services.IssueService;
-import org.springframework.stereotype.Controller;
+import ru.gb.model.Issue;
 
 
 @RestController

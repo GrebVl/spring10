@@ -19,7 +19,8 @@
 		<module>issue-service</module>
 		<module>book-service</module>
 		<module>discover-service</module>
-	</modules>
+        <module>http-logger-starter</module>
+    </modules>
 	<properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>

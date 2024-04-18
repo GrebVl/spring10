@@ -1,8 +1,7 @@
-package com.gb.providers;
+package ru.gb.providers;
 
-import com.gb.model.ReaderIssue;
+import ru.gb.model.ReaderIssue;
 import com.netflix.discovery.EurekaClient;
-import jakarta.ws.rs.ext.Provider;
 import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;

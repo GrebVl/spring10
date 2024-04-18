@@ -1,7 +1,7 @@
 package com.gb.controllers;
 
-import com.gb.controllers.testOptionsClasses.JUnitSpringBootBase;
-import com.gb.controllers.testOptionsClasses.TestConfig;
+import ru.gb.controllers.testOptionsClasses.JUnitSpringBootBase;
+import ru.gb.controllers.testOptionsClasses.TestConfig;
 import com.gb.model.Book;
 import com.gb.repository.BookRepository;
 import org.junit.jupiter.api.BeforeAll;
